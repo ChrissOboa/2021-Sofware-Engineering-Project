@@ -1,0 +1,34 @@
+<a href="" class="update-event"data-id='{{id}}'>Edit</a>
+<a href="" class="delete-event"data-id='{{id}}'>Delete</a>
+
+<h2 class="event-name">{{title}}</h2>
+<p>Date: {{date}}</p>
+<p>Location: {{location}}</p>
+{{#if description}}
+<p>Description: {{description}}</p>
+{{/if}}
+{{#if startTime}}
+<p>Starts: {{startTime}}</p>
+{{/if}}
+{{#if startTime}}
+<p>Ends: {{endTime}}</p>
+{{/if}}
+
+<h2>RSVPs so far</h2>
+<div class="event-rsvps">
+
+  {{#if responses}}
+    {{#each responses}}
+    <h3>{{@key}}</h3>
+      {{#if this}}
+        {{#each this}}
+          {{#if this}}
+            {{#each this}}
+              <p><strong>{{@key}}:</strong> {{this}}</p>
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      {{/if}}
+    {{/each}}
+  {{/if}}
+</div>

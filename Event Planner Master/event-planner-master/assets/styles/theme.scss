@@ -1,0 +1,72 @@
+.header {
+  height: 100px;
+}
+
+.nav {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  padding-left: 10px;
+  padding-top: 150px;
+  position: fixed;
+  top: 0;
+  width: 150px;
+}
+
+.main {
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  max-width: 300px;
+
+  input,
+  label {
+    width: 100%;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  &.create-rsvp {
+    input {
+      width: 5%;
+    }
+
+    label {
+      width: 95%;
+    }
+  }
+}
+
+.auth-form {
+  color: $homepage-font;
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-size;
+}
+
+.event-responses {
+  text-align: left;
+}
+
+.image-background {
+  background: url('../images/happening.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.white-box {
+  background: $dark-purple;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
